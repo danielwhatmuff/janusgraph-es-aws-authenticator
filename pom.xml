@@ -7,7 +7,7 @@
 	<name>JanusGraph AWS Authenticator</name>
 	<description>A plug-in for JanusGraph ES REST providing performing authentication for AWS ES service</description>
 	<properties>
-		<janusgraph.es.version>0.2.0</janusgraph.es.version>
+		<janusgraph.es.version>0.3.1</janusgraph.es.version>
 		<aws.signing.interceptor>0.0.20</aws.signing.interceptor>
 		<aws.java.sdk.version>1.11.125</aws.java.sdk.version>
 		<dependency.plugin.version>3.0.2</dependency.plugin.version>
