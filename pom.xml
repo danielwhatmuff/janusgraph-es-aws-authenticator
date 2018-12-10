@@ -1,17 +1,37 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.newforma</groupId>
+    <groupId>com.github.danielwhatmuff</groupId>
 	<artifactId>janusgraph-es-aws-authenticator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>JanusGraph AWS Authenticator</name>
 	<description>A plug-in for JanusGraph ES REST providing performing authentication for AWS ES service</description>
 	<properties>
 		<janusgraph.es.version>0.3.1</janusgraph.es.version>
-		<aws.signing.interceptor>0.0.20</aws.signing.interceptor>
-		<aws.java.sdk.version>1.11.125</aws.java.sdk.version>
+		<aws.signing.interceptor>0.0.22</aws.signing.interceptor>
+		<aws.java.sdk.version>1.11.336</aws.java.sdk.version>
 		<dependency.plugin.version>3.0.2</dependency.plugin.version>
-	</properties>
+    </properties>
+    <parent>
+      <groupId>org.apache</groupId>
+      <artifactId>apache</artifactId>
+      <version>21</version>
+    </parent>
+    <scm>
+        <connection>scm:git:git@github.com:danielwhatmuff/janusgraph-es-aws-authenticator.git</connection>
+        <url>scm:git:git@github.com:danielwhatmuff/janusgraph-es-aws-authenticator.git</url>
+        <developerConnection>scm:git:git@github.com:danielwhatmuff/janusgraph-es-aws-authenticator.git</developerConnection>
+    </scm>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.janusgraph</groupId>
